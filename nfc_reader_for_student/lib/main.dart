@@ -1,7 +1,10 @@
+import 'dart:async';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nfc_manager/nfc_manager.dart';
 import 'package:nfc_manager/platform_tags.dart';
+import 'package:receive_sharing_intent/receive_sharing_intent.dart';
 
 import 'MoneyListView.dart';
 import 'StudentCardAnalysis.dart';
@@ -30,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> with WidgetsBindingObserver {
   var width;
   var money;
   var history_list = [];
-
+  
   @override
   void initState() {
     super.initState();
